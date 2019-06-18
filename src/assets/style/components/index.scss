@@ -1,0 +1,208 @@
+@import '../base/var.scss';
+.dm-select {
+    width: 130px!important;
+}
+.dm-pagination {
+    text-align: right;
+    margin: 24px 0 10px 0;
+}
+
+.label-hidden .el-checkbox__label,.label-hidden .el-radio__label{
+  opacity: 0;
+  position: absolute;
+}
+.dm-upload,.dm-upload_right{
+  position: relative;
+}
+
+.dm-upload .el-upload-list {
+  position: absolute;
+  top: 26px;
+  left: -26px;
+}
+
+.dm-upload_right .el-upload-list {
+  position: absolute;
+  top: -6px;
+  left: 100px;
+}
+
+
+.el-select{
+  width: 100%;
+  vertical-align: middle;
+}
+
+.dm-input_label{
+  font-size: 14px;
+  color: #333;
+  display: inline-block;
+}
+
+.dm-label-input_80{
+  width: calc(100% - 80px);
+}
+
+.dm-label-input_100{
+  width: calc(100% - 10-px);
+}
+
+.el-table .cell {
+  font-size: 14px;
+}
+
+#app .el-tabs__nav{
+  z-index: 1;
+}
+
+
+#app .el-breadcrumb__inner {
+  color: #303133;
+}
+
+#app .user-header-pop {
+  min-width: 95px;
+}
+
+#app .el-popover.user-header-pop {
+  min-width: 95px;
+}
+
+// .el-select-dropdown__wrap {
+//   max-height: 310px!important;
+// }
+
+.dm-tabs {
+  .el-tabs__header {
+    padding: 0 30px;
+    margin: 0;
+    background: #fff;
+    border-bottom: 1px solid #e4e7ed;
+
+  }
+  .el-tabs__item{
+    &.is-active{
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+}
+.dm-tabs-wrap{
+  position: relative;
+  top: -1px;
+  .el-tabs__header {
+    background: #fff;
+  }
+  .el-tabs__nav{
+    text-align: center;
+  }
+  .el-tabs__item{
+    text-align: center;
+    padding: 0 20px!important;
+    margin: 0 auto;
+    &.active{
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+}
+
+
+.el-table__empty-text{
+  width: auto;
+  margin-bottom:80px;
+  &::before{
+    content: ' ';
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url(/marketing/static/img/no-data_icon.png) no-repeat center;
+    margin: 80px auto 22px auto;
+  }
+}
+
+.btn-wrap_fixed{
+  position: fixed;
+  bottom: 0px;
+  // left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  height: 57px;
+  line-height: 57px;
+  border-top: 1px solid #E4E7ED;
+  z-index: 999;
+  &.on{
+    width: calc(100% - 200px);
+    left: 200px;
+  }
+  .el-button+.el-button {
+    margin-left: 4px;
+}
+}
+.dm-tabs-wrap{
+  .el-tabs__header {
+    margin: 0;
+  }
+}
+.el-select,.el-input,.el-checkbox.is-bordered,.el-date-editor{
+  margin-right: 4px;
+}
+
+.el-form-item__margin-top14 {
+  .el-form-item__label{
+    margin-top:14px;
+  }
+}
+
+
+.el-table--border::after, .el-table--group::after, .el-table::before {
+  content: '';
+  position: relative;
+  background-color: #ebeef5;
+  z-index: 1;
+}
+
+.el-table__body-wrapper.is-scrolling-none~.el-table__fixed-right::before, .el-table__body-wrapper.is-scrolling-none~.el-table__fixed-right::before {
+  content: '';
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ebeef5;
+  z-index: 4;
+}
+
+// 只读遮罩 - 无颜色
+.el-view-mask {
+  position: relative;
+  &:before{
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    content:'';
+  }
+}
+
+// 表格 \n 换行
+// .el-table .cell {
+//   white-space: pre-line;
+// }
+
+// cover
+// 微盟适用商品
+#wnsysp{
+  .el-select__tags-text{
+    display: inline-block;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .el-tag__close{
+    top: -8px;
+  }
+}

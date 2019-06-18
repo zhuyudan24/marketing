@@ -1,0 +1,330 @@
+@import './reset.scss';
+@import '../components/index.scss';
+
+
+#app .footlogo {
+  position: relative;
+  // padding:0;
+}
+
+#app .dm-wrap{
+  margin:24px;
+  background:#FFF;
+  padding:24px;
+  // min-height: 500px;
+}
+#app .dm-form__wrap{
+  margin:24px;
+  background:#FFF;
+  padding:20px 32px;
+  // min-height: 500px;
+}
+
+.sms-table_info{
+  &>img {
+      width: 60px;
+      height: 60px;
+    }
+}
+.bottom-border{
+  border-bottom: 1px solid #DCDFE6;
+}
+
+.dm-title__label {
+  border-bottom: 1px solid #DCDFE6;
+  width: calc(100% + 32px);
+  padding: 0 0 20px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 20px -32px;
+  &--tips {
+    padding:8px 16px;
+    border:1px solid #91d5ff;
+    background: #e6f7ff;
+    border-radius: 4px;
+    color: #606266;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-right: 32px;
+  }
+  &--icon {
+    font-size:14px;
+    padding-left:4px;
+    vertical-align: middle;
+    color:#909399;
+  }
+}
+
+.dm-title__label--outer {
+  border-bottom: 1px solid #DCDFE6;
+  width: calc(100% + 24px);
+  padding: 0 0 20px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 20px -24px;
+}
+
+.gic-people--button{
+  background: #f2f3f4;
+  padding: 0px 0px 20px 124px;
+  .el-button+.el-button {
+      margin-left: 5px;
+  }
+}
+.filter--box {
+  background: #ebeef5;
+  height: 50px;
+  line-height: 50px;
+  .el-checkbox{
+    background: #fff;
+  }
+  .el-checkbox.is-bordered+.el-checkbox.is-bordered {
+    margin-left: 0;
+  }
+}
+.no-link{
+  .el-breadcrumb__inner {
+    font-weight: 400!important;
+    cursor: text!important;
+    color: #606266!important;
+  }
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #f0f2f5;
+  -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-button{
+  background-color:#e4e7ed;
+}
+
+.select-shop__tag {
+  margin-bottom: 5px;
+}
+.select-shop__tag + .select-shop__tag {
+    margin-left: 10px;
+}
+
+.chart--nodata {
+  width: auto;
+  text-align: center;
+  &::before {
+    content: ' ';
+    display: block;
+    width: 200px;
+    height: 200px;
+    background: url(/static/img/chart-no-data.png) no-repeat center;
+    background-size: cover;
+    margin: 20px auto 10px auto;
+  }
+  &::after {
+    content: "\6682\65E0\6570\636E";
+    color: #c0c4cc;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 60px;
+  }
+}
+.no-data {
+  width: auto;
+  text-align: center;
+}
+
+
+.leftBar-wrap .el-menu{
+  background-color: #020b21;
+}
+
+
+
+
+.table__avatar{
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  margin-right:4px;
+  display: inline-block;
+}
+.table__avatar--40{
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  margin-right:4px;
+  display: inline-block;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.dm-button--add {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border: 1px dashed #e4e7ed;
+  border-radius: 2px;
+  text-align: center;
+  margin:10px 0;
+  cursor: pointer;
+  &:hover{
+    border: 1px dashed #1890ff;
+    color:#1890ff;
+  }
+}
+
+.sync-imgtext__dialog{
+  .el-dialog__body{
+    padding:0 20px 30px;
+  }
+}
+.dialog__body__nopadding {
+  .el-dialog__body{
+    padding:0 20px 30px;
+  }
+}
+
+.break-word{
+  word-wrap: break-word;
+}
+
+.table-name--ellipsis{
+  width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+
+.el-table .table-img .cell{
+  line-height: 0px;
+}
+.message-box--btn-center{
+  .el-message-box__btns {
+    text-align: center;
+  }
+}
+
+
+.left-aside-contain {
+  /deep/  .el-submenu__title:hover {
+    background-color: #020b21;
+  }
+}
+
+.el-menu.el-menu--popup {
+    background: #020b21;
+    border-radius: 4px;
+}
+/* 左侧菜单 */
+.leftBar-wrap .el-menu{
+  background-color: #020b21;
+}
+.leftBar-wrap .cardmenu-item .el-submenu__title,.leftBar-wrap .cardmenu-item .el-menu-item,.leftBar-wrap .cardmenu-item .el-submenu .el-menu-item{
+  height: 40px;
+  line-height: 40px;
+}
+.leftBar-wrap .el-submenu__title:hover {
+  background-color: #020b21;
+}
+.leftBar-wrap .cardmenu-item li.el-menu-item:hover i{
+  /*background-color: #409EFF;*/
+  color: #fff;
+}
+.leftBar-wrap .cardmenu-item li.el-menu-item:hover span{
+  /*background-color: #409EFF;*/
+  color: #fff;
+}
+.leftBar-wrap .cardmenu-item li.el-submenu:hover i{
+  /*background-color: #409EFF;*/
+  color: #fff;
+}
+.leftBar-wrap .cardmenu-item li.el-submenu:hover span{
+  /*background-color: #409EFF;*/
+  color: #fff;
+}
+.leftBar-wrap .cardmenu-item li.el-submenu .el-menu-item:hover label{
+  /*background-color: #409EFF;*/
+  color: #fff;
+  cursor: pointer;
+}
+.leftBar-wrap .cardmenu-item .el-submenu.is-active div.el-submenu__title i{
+  color: #fff;
+}
+.leftBar-wrap .cardmenu-item .el-submenu.is-active div.el-submenu__title span{
+  color: #fff;
+}
+.el-menu.el-menu--popup .el-menu-item.is-active label {
+  color: #fff;
+}
+.word-break-all {
+  word-break: break-all;
+}
+
+
+
+//游戏的样式
+
+.game-tips__preview{
+  width:330px;
+  height:450px;
+  background:rgba(0,0,0,0.5);
+  overflow: hidden;
+  &__inner {
+    background: #fff;
+    border-radius: 10px;
+    width: 270px;
+    height: 380px;
+    margin: 30px 30px 40px 30px;
+    text-align: center;
+  }
+  &--title {
+    color:#000;
+    font-size: 16px;
+    letter-spacing: 1.0;
+    line-height: 22px;
+    text-align: center;
+    padding:10px 0;
+  }
+  &--img {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    margin: 10px auto;
+  }
+  &--desc {
+    color: #000;
+    font-size: 12px;
+    width: 200px;
+    line-height: 20px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    margin: 10px auto;
+    white-space: pre;
+  }
+}
+
+.el-table__empty-text:before {
+  content: " ";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url('/static/img/no-data_icon.png') no-repeat 50%;
+  margin: 80px auto 22px;
+}
+.el-table__empty-text {
+    width: auto;
+    margin-bottom: 80px;
+}
+.el-table__empty-block{
+  min-height: 240px;
+}

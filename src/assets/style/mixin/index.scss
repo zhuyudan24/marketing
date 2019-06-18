@@ -1,0 +1,8 @@
+@mixin ellipsis($width){
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: $width;
+  white-space: nowrap;
+  word-wrap: normal;
+  width: auto;
+}
