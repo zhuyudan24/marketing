@@ -16,7 +16,7 @@
     "@gic-test/vue-gic-people": "^1.8.94",
     "@riophae/vue-treeselect": "^0.0.36",
     "@tinymce/tinymce-vue": "^1.0.8",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "echarts": "^4.1.0",
     "element-ui": "^2.4.1",
     "packele": "^1.0.5",
