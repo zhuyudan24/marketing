@@ -21,7 +21,7 @@
     "element-ui": "^2.4.1",
     "packele": "^1.0.5",
     "scriptjs": "^2.5.8",
-    "tinymce": "^4.8.2",
+    "tinymce": "^5.7.1",
     "uuid": "^3.3.2",
     "v-charts": "^1.17.8",
     "viser-vue": "^2.2.5",
